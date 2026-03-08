@@ -20,15 +20,15 @@ class Solution:
         queue = [node]
 
         while queue:
-            current = queue.pop()
+            current = queue.pop() # 피드백: popleft 사용을 권고 -> 내가 의도한 순서대로 디버깅이 가능
 
             for neighbor in current.neighbors:
                 if neighbor not in visited:
-                    clone = Node(neighbor.val) # copy
+                    clone = Node(neighbor.val) # 복사
                     visited[neighbor] = clone
                     queue.append(neighbor)
 
-                visited[current].neighbors.append(visited[neighbor]) # link
+                visited[current].neighbors.append(visited[neighbor]) # 그래프 연결
 
         return visited[node]
 
