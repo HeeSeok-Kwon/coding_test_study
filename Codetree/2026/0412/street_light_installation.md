@@ -1,4 +1,4 @@
-### 문제 이해
+### 문제 개요
 - 링크: https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/street-light-installation/description
 
 ### 예제 톺아보기
