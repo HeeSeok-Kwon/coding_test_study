@@ -124,6 +124,7 @@ class StreetLightInstallation:
 
         right_pos = self.pos[right_id]
 
+        # 2. 새로운 가로등 위치 계산
         new_pos = (left_pos + right_pos + 1) // 2
         
         # 3. 새 id 생성
