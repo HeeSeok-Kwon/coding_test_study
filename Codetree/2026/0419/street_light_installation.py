@@ -198,7 +198,7 @@ class StreetLightInstallation:
 
 
 def solve():
-    manager = StreetLightInstallation()
+    streetLightInstallation = StreetLightInstallation()
     q = int(input().strip())
     answer = []
 
@@ -210,17 +210,17 @@ def solve():
             N = cmd[1]
             M = cmd[2]
             positions = cmd[3:]
-            manager.init(N, M, positions)
+            streetLightInstallation.init(N, M, positions)
 
         elif order == 200:
-            manager.add_light()
+            streetLightInstallation.add_light()
 
         elif order == 300:
             x = cmd[1]
-            manager.remove_light(x)
+            streetLightInstallation.remove_light(x)
 
         elif order == 400:
-            answer.append(str(manager.query_power()))
+            answer.append(str(streetLightInstallation.query_power()))
 
     print("\n".join(answer))
 
